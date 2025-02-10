@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panefundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.EventosMarcadosController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+      <AnchorPane fx:id="anchorfundoAnchorPane" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Text fx:id="viagensdisponiveisText" fill="WHITE" layoutX="484.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eventos Marcados" textAlignment="CENTER" wrappingWidth="311.443359375">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tabelaTableView" layoutX="180.0" layoutY="150.0" prefHeight="484.0" prefWidth="920.0">
+               <columns>
+                  <TableColumn fx:id="idviagemTableColumn" prefWidth="99.0" text="ID EVENTO" />
+                  <TableColumn fx:id="OrigemTableColumn" prefWidth="245.0" text="NOME" />
+                  <TableColumn fx:id="DestinoTableColumn" prefWidth="245.0" text="LOCAL" />
+                  <TableColumn fx:id="dataTableColumn" minWidth="0.0" prefWidth="137.0" text="DATA" />
+                  <TableColumn fx:id="estoqueTableColumn" prefWidth="75.0" text="ESTOQUE" />
+                  <TableColumn fx:id="valorTableColumn" prefWidth="118.0" text="VALOR" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="retornarButton" layoutX="19.0" layoutY="60.0" mnemonicParsing="false" onAction="#retornarTelaPrincipal" prefHeight="37.0" prefWidth="126.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="RETORNAR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

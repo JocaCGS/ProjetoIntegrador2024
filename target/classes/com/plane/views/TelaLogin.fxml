@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="fundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.LoginScreenController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="anchorfundoAnchorPane" layoutX="452.0" layoutY="343.0" prefHeight="339.0" prefWidth="377.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="317.0" layoutX="14.0" layoutY="11.0" stroke="#73d5ff" strokeType="INSIDE" width="350.0" />
+            <Text fx:id="loginText" fill="#575757" layoutX="143.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" wrappingWidth="93.0">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <TextField fx:id="emailTextField" layoutX="69.0" layoutY="111.0" prefHeight="25.0" prefWidth="242.0" promptText="exemplo@email.com" />
+            <Text fx:id="seuemailTextField" layoutX="69.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seu e-mail" wrappingWidth="75.09765625">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="suasenhaText" layoutX="69.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sua senha" wrappingWidth="75.09765625">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="logarButton" layoutX="147.0" layoutY="269.0" mnemonicParsing="false" onAction="#login" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: #51c9f2; -fx-border-radius: 15; -fx-background-radius: 15;" text="Logar" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+            <Text fx:id="aindanaoText" layoutX="69.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ainda não tem conta?" wrappingWidth="119.09765625">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="cadastreseButton" contentDisplay="TEXT_ONLY" layoutX="168.0" layoutY="203.0" mnemonicParsing="false" onAction="#mudaTelaSignUp" prefHeight="15.0" prefWidth="68.0" style="-fx-background-color: none;" text="Cadastre-se" textFill="#3465eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="senhaTextField" layoutX="69.0" layoutY="163.0" prefHeight="25.0" prefWidth="242.0" promptText="Senha" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

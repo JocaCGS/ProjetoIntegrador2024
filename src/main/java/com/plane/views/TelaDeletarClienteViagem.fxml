@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panefundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.DeletarClienteViagemController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="738.0" fitWidth="1292.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="anchorfundoAnchorPane" layoutY="-4.0" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Text fx:id="deletarclienteviagemText" fill="WHITE" layoutX="419.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remover Cliente de Viagem" textAlignment="CENTER" wrappingWidth="442.443359375">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tabelaTableView" layoutX="110.0" layoutY="140.0" prefHeight="500.0" prefWidth="1066.0">
+              <columns>
+                  <TableColumn fx:id="nomeclienteTableColumn" prefWidth="216.0" text="NOME CLIENTE" />
+                <TableColumn fx:id="colunaidclienteTableColumn" prefWidth="196.0" text="CPF CLIENTE" />
+                <TableColumn fx:id="colunaidviagemTableColumn" prefWidth="238.0" text="ID VIAGEM" />
+                  <TableColumn fx:id="destinoTableColumn" prefWidth="244.0" text="DESTINO" />
+                  <TableColumn fx:id="dataTableColumn" prefWidth="171.0" text="DATA" />
+              </columns>
+            </TableView>
+            <Button fx:id="deletarassociacaoButton" layoutX="522.0" layoutY="652.0" mnemonicParsing="false" onAction="#deletarAssociacao" prefHeight="44.0" prefWidth="243.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="DELETAR ASSOCIAÇÃO" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="retornarButton" layoutX="19.0" layoutY="60.0" mnemonicParsing="false" onAction="#mudaTelaMenuADM" prefHeight="37.0" prefWidth="126.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="RETORNAR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

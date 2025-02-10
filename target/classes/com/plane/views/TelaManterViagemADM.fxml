@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panefundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.ManterViagemADMController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="738.0" fitWidth="1292.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="anchorfundoAnchorPane" layoutY="-4.0" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Text fx:id="manterviagemText" fill="WHITE" layoutX="514.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manter Viagens" textAlignment="CENTER" wrappingWidth="252.443359375">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tabelaTableView" layoutX="786.0" layoutY="129.0" prefHeight="508.0" prefWidth="444.0">
+              <columns>
+                <TableColumn fx:id="origemTableColumn" prefWidth="110.0" text="ORIGEM" />
+                <TableColumn fx:id="destinoTableColumn" prefWidth="108.0" text="DESTINO" />
+                  <TableColumn fx:id="dataTableColumn" prefWidth="68.0" text="DATA" />
+                  <TableColumn fx:id="estoqueTableColumn" prefWidth="74.0" text="ESTOQUE" />
+                  <TableColumn fx:id="valorTableColumn" prefWidth="83.0" text="VALOR" />
+              </columns>
+            </TableView>
+            <Rectangle fx:id="fundoazul1Rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="579.0" layoutX="14.0" layoutY="127.0" stroke="#51c9f2" strokeType="INSIDE" width="349.0" />
+            <Rectangle fx:id="fundoazul2Rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="579.0" layoutX="386.0" layoutY="127.0" stroke="#51c9f2" strokeType="INSIDE" width="374.0" />
+            <Text fx:id="adicionarviagemText" fill="#575757" layoutX="72.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar Viagem" wrappingWidth="308.443359375">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Text fx:id="editarviagemselecionadaText" fill="#575757" layoutX="400.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar Viagem Selecionada" wrappingWidth="356.443359375">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <TextField fx:id="addorigemTextField" layoutX="27.0" layoutY="256.0" prefHeight="37.0" prefWidth="308.0" promptText="Local de onde o voo ira sair" />
+            <TextField fx:id="adddestinoTextField" layoutX="27.0" layoutY="340.0" prefHeight="37.0" prefWidth="308.0" promptText="Destino do voo" />
+            <TextField fx:id="adddataTextField" layoutX="27.0" layoutY="423.0" prefHeight="37.0" prefWidth="308.0" promptText="__/__/____" />
+            <TextField fx:id="addestoqueTextField" layoutX="27.0" layoutY="509.0" prefHeight="37.0" prefWidth="308.0" promptText="Vagas do voo" />
+            <TextField fx:id="addvalorTextField" layoutX="27.0" layoutY="586.0" prefHeight="37.0" prefWidth="308.0" promptText="Ex: 47,60" />
+            <Button fx:id="adicionarviagemButton" layoutX="39.0" layoutY="637.0" mnemonicParsing="false" onAction="#adicionarViagem" prefHeight="37.0" prefWidth="285.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="ADICIONAR VIAGEM" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="updateorigemTextField" layoutX="404.0" layoutY="256.0" prefHeight="37.0" prefWidth="308.0" promptText="Local de onde o voo ira sair" />
+            <TextField fx:id="updatedestinoTextField" layoutX="404.0" layoutY="340.0" prefHeight="37.0" prefWidth="308.0" promptText="Destino do voo" />
+            <TextField fx:id="updatedataTextField" layoutX="404.0" layoutY="423.0" prefHeight="37.0" prefWidth="308.0" promptText="__/__/____" />
+            <TextField fx:id="updateestoqueTextField" layoutX="404.0" layoutY="509.0" prefHeight="37.0" prefWidth="308.0" promptText="Vagas do voo" />
+            <TextField fx:id="updatevalorTextField" layoutX="404.0" layoutY="586.0" prefHeight="37.0" prefWidth="308.0" promptText="Ex: 47,60" />
+            <Button fx:id="editarviagemButton" layoutX="416.0" layoutY="637.0" mnemonicParsing="false" onAction="#editarViagem" prefHeight="37.0" prefWidth="285.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="EDITAR VIAGEM" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletarviagemButton" layoutX="846.0" layoutY="653.0" mnemonicParsing="false" onAction="#deletarViagem" prefHeight="44.0" prefWidth="325.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="DELETAR VIAGEM SELECIONADA" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="retornarButton" layoutX="19.0" layoutY="60.0" mnemonicParsing="false" onAction="#mudaTelaMenuADM" prefHeight="37.0" prefWidth="126.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="RETORNAR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Text fx:id="addorigemText" layoutX="25.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Origem" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="adddestinoText" layoutX="25.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destino" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="adddataText" layoutX="25.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="addestoqueText" layoutX="25.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="addvalorText" layoutX="25.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="updateorigemText" layoutX="402.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Origem" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="updatedestinoText" layoutX="402.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destino" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="updatedataText" layoutX="402.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="updateestoqueText" layoutX="402.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="updatevalorText" layoutX="402.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" wrappingWidth="126.443359375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

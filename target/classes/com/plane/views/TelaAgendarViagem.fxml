@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panefundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.AgendarViagemController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="738.0" fitWidth="1292.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Downloads/4.png" />
+         </image></ImageView>
+      <AnchorPane fx:id="anchorfundoAnchorPane" layoutY="-7.0" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Text fx:id="agendarviagemText" fill="WHITE" layoutX="506.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agendar Viagem" textAlignment="CENTER" wrappingWidth="269.443359375">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="retornarButton" layoutX="19.0" layoutY="60.0" mnemonicParsing="false" onAction="#agendarViagemRetornar" prefHeight="37.0" prefWidth="126.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="RETORNAR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Rectangle fx:id="fundoazulRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="541.0" layoutX="276.0" layoutY="151.0" stroke="#51c9f2" strokeType="INSIDE" width="740.0" />
+           
+            <MenuButton fx:id="escolherviagemMenuButton" layoutX="410.0" layoutY="246.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="461.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #51c9f2;" text="-- ESCOLHER VIAGEM DISPONÍVEL --" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></MenuButton>
+            <Button fx:id="agendarviagensButton" layoutX="489.0" layoutY="575.0" mnemonicParsing="false" onAction="#agendarViagem" prefHeight="82.0" prefWidth="314.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="AGENDAR VIAGEM" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

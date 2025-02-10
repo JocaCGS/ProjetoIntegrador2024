@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panefundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.ClientePrincipalController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="anchorfundoAnchorPane" layoutY="-12.0" prefHeight="734.0" prefWidth="1280.0">
+         <children>
+            <Button fx:id="agendareventosButton" layoutX="706.0" layoutY="385.0" mnemonicParsing="false" onAction="#abrirTelaAgendarEventos" prefHeight="115.0" prefWidth="314.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="AGENDAR EVENTOS" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="visualizarviagensdisponiveisButton" layoutX="63.0" layoutY="108.0" mnemonicParsing="false" onAction="#abrirTelaViagensDisponiveis" prefHeight="102.0" prefWidth="347.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="VISUALIZAR VIAGENS&#10; DISPONÍVEIS" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="visualizarviagensmarcadasButton" layoutX="63.0" layoutY="244.0" mnemonicParsing="false" onAction="#abrirTelaViagensMarcadas" prefHeight="102.0" prefWidth="347.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="VISUALIZAR VIAGENS &#10;MARCADAS" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="agendarviagensButton" layoutX="909.0" layoutY="203.0" mnemonicParsing="false" onAction="#abrirTelaAgendarViagens" prefHeight="115.0" prefWidth="314.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="AGENDAR VIAGENS" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="fazeranotacoesButton" layoutX="514.0" layoutY="203.0" mnemonicParsing="false" onAction="#abrirTelaNotas" prefHeight="115.0" prefWidth="314.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="FAZER ANOTAÇÕES" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="visualizareventosdisponiveisButton1" layoutX="63.0" layoutY="385.0" mnemonicParsing="false" onAction="#abrirTelaEventosDisponiveis" prefHeight="102.0" prefWidth="347.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="VISUALIZAR EVENTOS&#10; DISPONÍVEIS" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="visualizareventosmarcadasButton1" layoutX="63.0" layoutY="524.0" mnemonicParsing="false" onAction="#abrirTelaEventosMarcados" prefHeight="102.0" prefWidth="347.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="VISUALIZAR EVENTOS &#10;MARCADOS" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imagemiconeuserImageView" fitHeight="77.0" fitWidth="80.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="botaoiconeuserButton" layoutX="7.0" layoutY="17.0" mnemonicParsing="false" opacity="0.0" prefHeight="84.0" prefWidth="92.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panefundoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plane.controllers.MenuADMController">
+   <children>
+      <ImageView fx:id="imagemfundoImageView" fitHeight="738.0" fitWidth="1292.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="anchorfundoAnchorPane" layoutY="-4.0" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Button fx:id="mantereventosButton" layoutX="224.0" layoutY="346.0" mnemonicParsing="false" onAction="#mudaTelaManterEvento" prefHeight="115.0" prefWidth="254.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="MANTER EVENTOS" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="manterviagensButton" layoutX="224.0" layoutY="189.0" mnemonicParsing="false" onAction="#mudaTelaManterViagem" prefHeight="115.0" prefWidth="254.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="MANTER VIAGENS" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletarclienteviagemButton" layoutX="677.0" layoutY="266.0" mnemonicParsing="false" onAction="#mudaTelaDeletarClienteViagem" prefHeight="115.0" prefWidth="370.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="REMOVER CLIENTE DE VIAGEM" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Text fx:id="menuadministracaoText" fill="WHITE" layoutX="419.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu ADMINISTRAÇÃO" textAlignment="CENTER" wrappingWidth="420.443359375">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="deletarclienteeventoButton" layoutX="677.0" layoutY="426.0" mnemonicParsing="false" onAction="#mudaTelaDeletarClienteEvento" prefHeight="115.0" prefWidth="370.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="REMOVER CLIENTE DE EVENTO" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="manterclientesButton" layoutX="224.0" layoutY="496.0" mnemonicParsing="false" onAction="#mudaTelaManterCliente" prefHeight="115.0" prefWidth="254.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="MANTER CLIENTES" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="menuclienteButton" layoutX="19.0" layoutY="60.0" mnemonicParsing="false" onAction="#mudaTelaEscolherMenuADM" prefHeight="38.0" prefWidth="144.0" style="-fx-border-radius: 15; -fx-background-color: #51c9f2; -fx-background-radius: 15;" text="MENU CLIENTE" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
